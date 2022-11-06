@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		discord <%= discordAuthenticated %> twitch <%= twitchAuthenticated%>
+		<a
+			id="discordLink"
+			href="https://discord.com/api/oauth2/authorize?client_id=1037396501732794489&permissions=8&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauthorize%2Fdiscord&response_type=code&scope=identify%20bot"
+			>Connect with Discord</a
+		>
+		<a
+			id="twitchLink"
+			href="https://id.twitch.tv/oauth2/authorize?client_id=evozwlc7xv0aggczc6ya92vnsrsxp2&redirect_uri=http://localhost:3000/authorize/twitch&response_type=code&scope=channel%3Aread%3Asubscriptions"
+			>Connect with Twitch</a
+		>
+	</body>
+</html>
